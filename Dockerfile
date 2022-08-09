@@ -8,6 +8,6 @@ COPY ./ ./
 
 RUN pip install --no-cache-dir -r source/requirements.txt
 
-CMD [ "python", "./source/main.py" ]
+CMD [ "python", "-m", "http.server", "8080" ]
 
 #EXPOSE 8080
