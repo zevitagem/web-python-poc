@@ -18,7 +18,6 @@ docker compose up -d --build
 
 # Subindo a aplicação manualmente
 ```shell
-
 $ docker build -t cgi-python .
 
 $ docker run -p 8080:8080 \
@@ -30,9 +29,9 @@ Server started http://0.0.0.0:8080
 ```
 
 # Como testar
-Tenha certeza de que sua aplicação está realmente rodando, exemplo:
+Tenha certeza de que sua aplicação está realmente de pé, então:
 
-Acesse pelo navegador a `URL`: http://localhost:8080/zetest
+Acesse o navegador e digite, por exemplo, a `URL`: http://localhost:8080/zetest
 
 ```shell
 172.17.0.1 - - [09/Aug/2022 20:16:34] "GET /zetest HTTP/1.1" 200 -
@@ -40,7 +39,9 @@ Acesse pelo navegador a `URL`: http://localhost:8080/zetest
 
 ---
 ## Observações
-- A pasta `source` está sendo observada, ou seja, todas as alterações que forem realizadas localmente dentro dessa pasta, serão automáticamente refletidas para dentro do container.
+- A pasta `source` está sendo observada, ou seja, todas as alterações que forem realizadas localmente dentro dessa pasta, serão automáticamente refletidas para dentro do `container`.
+- Se quiser experimentar a maneira "manual/raw", vá para o ramo "**docker-raw-config**" e execute por lá.
+- A única diferença do ramo "**docker-raw-config**" ramo para o "**main**" é a exposição da PORTA 8080: https://github.com/zevitagem/web-python-poc/pull/2/files
 
 ## Referências
 - https://pythonbasics.org/webserver/
