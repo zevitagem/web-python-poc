@@ -41,7 +41,7 @@ Acesse o navegador e digite, por exemplo, a `URL`: http://localhost:8080/zetest
 ## Observações
 - A pasta `source` está sendo observada, ou seja, todas as alterações que forem realizadas localmente dentro dessa pasta, serão automáticamente refletidas para dentro do `container`.
 - Se quiser experimentar a maneira "manual/raw", vá para o ramo "**docker-raw-config**" e execute por lá.
-- A única diferença do ramo "**docker-raw-config**" ramo para o "**main**" é a exposição da PORTA 8080: https://github.com/zevitagem/web-python-poc/pull/2/files
+- A única diferença do ramo "**docker-raw-config**" para o "**main**" é a exposição da PORTA 8080: https://github.com/zevitagem/web-python-poc/pull/2/files
 
 ## Referências
 - https://pythonbasics.org/webserver/
